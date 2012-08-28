@@ -1,0 +1,547 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>MIT OpenCourseWare | Electrical Engineering and Computer Science | 6.828 Operating System Engineering, Fall 2006 | Readings</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="6-828-operating-system-engineering-fall-2006" name="WT.cg_n">
+<meta content="Readings" name="WT.cg_s">
+<meta content="Readings" name="Title">
+<meta content="This section contains information about additional reading materials regarding the course." name="Description">
+<meta content="Kaashoek, Frans" name="Author">
+<meta content="" name="Keyword">
+<meta content="" name="Version">
+<meta content="6.828 Operating System Engineering | Readings" name="Search_Display">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../common/styles/common.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/courses.css">
+<link href="http://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<script type="text/javascript" src="../../common/scripts/common-utils-offline.js"></script><script type="text/javascript" src="../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../common/scripts/bubble-popup-offline.js"></script>
+</head>
+<body id="home">
+        <a href="#main" class="skip" tabindex="-1">skip to content</a> <a id="top"></a>
+        <div id="container">
+            
+            
+                
+	
+
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header"><div id="page_header">
+<div class="logo"><h1><a href="http://ocw.mit.edu/"><img height="36" width="289" alt="MIT OpenCourseWare" src="../../common/images/logo-ocw-home_new.gif"></a></h1></div>     <div class="header_links">
+<div class="newsletter_icon"><a href="http://ocw.mit.edu/jsp/subscribe.jsp?utm_source=header"><img alt="Subscribe to OCW's newsletter." title="Subscribe to OCW's newsletter." src="../../common/images/newsletter.png"></a></div>         <div class="social_media_icons">
+<a style="float: left;" href="http://twitter.com/mitocw"><img alt="Follow OCW on Twitter." title="Follow OCW on Twitter." src="../../common/images/twitter.png"></a>             <a style="float: right;" href="http://facebook.com/mitocw"><img alt="Follow OCW on Facebook." title="Follow OCW on Facebook." src="../../common/images/facebook.png"></a>
+</div>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+<div id="primary_nav">
+<ul id="nav">
+<li class="">
+<a href="http://ocw.mit.edu/">Home</a>
+    </li>
+	<li class="first active">
+<a href="http://ocw.mit.edu/courses/">Courses</a>
+    </li>
+	<li class="">
+<a href="http://ocw.mit.edu/donate">Donate</a>
+    </li>
+	<li class="">
+<a href="http://ocw.mit.edu/about/">About OCW</a>
+    </li>
+    
+   
+</ul>
+<!-- begin search area, inputs are placed inside div blocks to validate xhtml strict --><form method="get" action="../../common/search/AdvancedSearch.htm">
+<div class="searchform">
+    <input type="text" onblur="fillSearchBox()" onfocus="clearSearchBox()" maxlength="255" value="Enter search keyword" name="q" class="search" id="terms"><input type="image" alt="Go" src="../../common/images/go_new.gif" name="btnG" class="but"><a href="../../common/search/AdvancedSearch.htm">Advanced Search</a>
+</div>
+</form>
+<!-- end search area -->
+<ul id="secondary_nav">
+<li class="first"><a href="http://ocw.mit.edu/help">Help</a></li>
+    <li><a href="../../common/jsp/feedback.htm">Contact Us</a></li>
+</ul>
+<!-- end Primary Nav -->
+</div>
+
+            
+            
+            <div id="main">
+                
+                <div id="local_navigation">
+                    
+
+
+
+
+<div class="get_started">
+	<ul>
+<li><a href="http://ocw.mit.edu/courses">VIEW ALL COURSES</a></li>
+	</ul>
+</div>
+
+<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><div class="get_started">
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/index.htm" class="">Course Home</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/syllabus/index.htm" class="">Syllabus</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/calendar/index.htm" class="">Calendar</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/readings/index.htm" class="selected">Readings</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/lecture-notes/index.htm" class="">Lecture Notes</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/labs/index.htm" class="">Labs</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/assignments/index.htm" class="">Assignments</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/exams/index.htm" class="">Exams</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/tools/index.htm" class="">Tools</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/related-resources/index.htm" class="">Related Resources</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul></ul>
+</div>
+	        
+		
+	</div>
+	
+
+<!--Left Nav Ends -->
+
+
+<div class="get_started">
+	<div class="leftNavSubhead">Translations*</div>
+	<ul>
+<li><a href="http://mit-ocw-thai.eng.chula.ac.th/MIT_THAI/e27e34e28e27e01e23e23e21e44e1fe1fe49e32e41e25e30e04e2de21e1ee34e27e40e15e2de23e4c-electrical-engineering-and-computer-science/6.828-e27e34e28e27e01e23e23e21e23e30e1ae1ae1be0ee34e1ae31e15e34e01e32e23-e24e14e39e43e1ae44e21e49e23e48e27e07-2003-operating-system-engineering-fall-2003" title="Thai version of this course">ภาษาเขียน</a></li>
+	</ul>
+</div>
+<div class="get_started">
+	<div class="leftNavSubhead">Archived Versions</div>
+	<ul>
+<li><a href="http://hdl.handle.net/1721.1/37331" title="Fall 2003">Fall 2003</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+                </div>
+                
+                               
+                <div id="content_body">
+        <div class="page_links">
+            <div class="breadcrumb">
+                <div id="portal-breadcrumbs">
+
+    <a href="http://ocw.mit.edu/">Home</a>
+    <span class="breadcrumbSeparator">
+        &gt;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://ocw.mit.edu/courses">Courses</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science">Electrical Engineering and Computer Science</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            <a href="../../contents/index.htm">Operating System Engineering</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Readings</span>
+         
+    </span>
+</div>
+
+            </div>
+        </div>
+        <div id="main_content_course">
+            <div id="courses_inner">
+                <h1>
+        <span class="" id="parent-fieldname-title">
+            Readings
+        </span>
+    </h1>
+                <div class="clear"></div>
+                <div class="mod8">
+                    
+                    
+        <div class="" id="parent-fieldname-text">
+            
+
+<p>Some of the readings require the xv6 code (<a href="../../contents/readings/xv6.pdf">PDF</a>), which is provided courtesy of Frans Kaashoek, Robert Morris, and Russ Cox and is used here with permission.</p>
+<p>6.828 is inspired by what Lions did for Unix® version 6:<br><a href="http://www.amazon.com/exec/obidos/ASIN/1573980137/ref=nosim/mitopencourse-20"><img alt="Amazon logo" src="../../common/images/a_logo_17.gif" style="vertical-align: middle;" border="0"></a> Lions, John. <em>Lions' Commentary on UNIX® 6th Edition with Source Code</em>. San Jose, CA: Peer-to-Peer Communications, 1996. ISBN: 1573980137.</p>
+<div class="maintabletemplate">
+<table summary="See table caption for summary.">
+<caption class="invisible">Course calendar.</caption>
+<thead><tr>
+<th scope="col">SES #</th>
+<th scope="col">TOPICS</th>
+<th scope="col">READINGS</th>
+</tr></thead>
+<tbody>
+<tr class="row">
+<td>1</td>
+<td>Operating Systems</td>
+<td>Ritchie, Dennis M. "The Evolution of the Unix Time-sharing System." <em>AT&amp;T Bell Laboratories Technical Journal</em> 63, no. 6, Part 2 (October 1984): 1577-93.</td>
+</tr>
+<tr class="alt-row">
+<td>2</td>
+<td>PC Hardware and x86 Programming</td>
+<td>Carter, Paul A. <a href="http://www.drpaulcarter.com/pcasm/">PC Assembly Language</a>. July 23, 2006. (Note: Do not read chapters 5, 6, and 7.2.)</td>
+</tr>
+<tr class="row">
+<td>3</td>
+<td>OS Organization</td>
+<td>Engler, Dawson R., M. Frans Kaashoek, and James O'Toole Jr. "Exokernel: An Operating System Architecture for Application-Level Resource Management." In <a href="http://www.amazon.com/exec/obidos/ASIN/0897917154/ref=nosim/mitopencourse-20" target="_self"><em>Proceedings of the 15th ACM Symposium on Operating Systems Principles</em></a>. New York, NY: ACM Press, 1995. ISBN: 0897917154.</td>
+</tr>
+<tr class="alt-row">
+<td>4</td>
+<td>Address Spaces using Segmentation (Handout)</td>
+<td>Read bootasm.S, bootother.S, bootmain.c, main.c, and init.c of xv6.</td>
+</tr>
+<tr class="row">
+<td>5</td>
+<td>Address Spaces using Page Tables (Handout)</td>
+<td>
+<p><em>The Intel® 80386 Programmer's Reference Manual 1986.</em> Chapters 5 and 6.</p>
+<p>Read setupsegs in xv6.</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>6</td>
+<td>Interrupt and Exception Handling</td>
+<td>
+<p><em>The IA-32 Intel® Architecture Software Developer's Manual (System Programming Guide).</em> Vol. 3, 2002, chapter 5. (Includes: <em>Basic Architecture, Instruction Set Reference Manual, and the System Programming Guide</em>.) (Note: skip 5.7, 5.8.2, and 5.12.2.)</p>
+<p>Read trapasm.S, trap.c, syscall.c, and usys.S of xv6.</p>
+</td>
+</tr>
+<tr class="row">
+<td>7</td>
+<td>Multiprocessors and Locking</td>
+<td>Read spinlock.c and skim mp.c of xv6.</td>
+</tr>
+<tr class="alt-row">
+<td>8</td>
+<td>Processes and Context Switching</td>
+<td>Read proc.c, setjmp.S, and sys_fork (in sysproc.c) of xv6.</td>
+</tr>
+<tr class="row">
+<td>9</td>
+<td>Processes and Coordination</td>
+<td>Read remainder of proc.c and sys_exec, sys_sbrk, sys_wait, sys_exit, and sys_kill of xv6.</td>
+</tr>
+<tr class="alt-row">
+<td>10</td>
+<td>Files and Disk I/O</td>
+<td>Read iread, iwrite, filewrite, fileread, wdir, mknod1, and code related to these system calls in fs.c, bio.c, ide.c, and file.c of xv6.</td>
+</tr>
+<tr class="row">
+<td>11</td>
+<td>Naming</td>
+<td>Read namei in fs.c (and remainder of fs.c), sysfile.c, and file.c of xv6.</td>
+</tr>
+<tr class="alt-row">
+<td>12</td>
+<td>
+<p>High-performance File Systems</p>
+</td>
+<td>Ganger, Gregory R., M. Kirk McKusick, Craig A. N. Soules, and Yale N. Patt. "Soft Updates: A Solution to the Metadata Update Problem in File Systems." <em>ACM Transactions on Computer Systems</em> 18, 2 (May 2000): 127-153.</td>
+</tr>
+<tr class="row">
+<td></td>
+<td>Mid-term Quiz</td>
+<td></td>
+</tr>
+<tr class="alt-row">
+<td>13</td>
+<td>Multics and Unix</td>
+<td>Corbató, F. J., J. H. Saltzer, and C. T. Clingen. <a href="http://www.multicians.org/f7y.html"><em>Multics - The First Seven Years</em></a>. Presented at the Spring Joint Computer Conference, 1972. Montvale, NJ: The American Federation of Information Processing Societies Press, 1972.</td>
+</tr>
+<tr class="row">
+<td>14</td>
+<td>Abstraction of OS Services</td>
+<td>Pike, Rob, Dave Presotto, Sean Dorward, Bob Flandrena, Ken Thompson, Howard Trickey, and Phil Winterbottom. <em>Plan 9</em>. 4th ed. Murray Hill, NJ: Bell Laboratories.</td>
+</tr>
+<tr class="alt-row">
+<td></td>
+<td>Hacking Day</td>
+<td></td>
+</tr>
+<tr class="row">
+<td></td>
+<td>Hacking Day (cont.)</td>
+<td></td>
+</tr>
+<tr class="alt-row">
+<td>15</td>
+<td>Microkernels</td>
+<td>Liedtke, Jochen. "Improving IPC by Kernel Design." <em>14th ACM Symposium on Operating System Principles (SOSP)</em>. Asheville, North Carolina: 5-8 December 1993.</td>
+</tr>
+<tr class="row">
+<td>16</td>
+<td>Virtual Machines</td>
+<td>Bugnion, Edouard, Scott Devine, and Mendel Rosenblum. "Disco: Running Commodity Operating Systems on Scalable Multiprocessors." In <em>Proceedings of the Sixteenth ACM Symposium on Operating Systems Principles</em>. Saint-Malo, France: October 1997.</td>
+</tr>
+<tr class="alt-row">
+<td>17</td>
+<td>Scheduling</td>
+<td>Mogul, Jeffrey, and K. K. Ramakrishnan. "Eliminating Receive Livelock in an Interrupt-driven Kernel." (This paper was originally published in the <em>Proceedings of the USENIX 1996 Annual Technical Conference.</em> San Diego, CA: January 1996.)</td>
+</tr>
+<tr class="row">
+<td>18</td>
+<td>Scalable Coordination</td>
+<td>Mellor-Crummey, John M., and Michael L. Scott. "Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors." <em>ACM Transactions on Computer Systems</em> 9, no. 1 (January 1991): 21-65.</td>
+</tr>
+<tr class="alt-row">
+<td>19</td>
+<td>Shell for 6.828 Kernel</td>
+<td>
+<p>Duff, Tom. "Rc - The Plan 9 Shell." (<img src="../../common/images/inacessible.gif" alt="This resource may not render correctly in a screen reader."><a href="http://plan9.bell-labs.com/sys/doc/rc.pdf">PDF</a>)</p>
+<p>Haahr, Paul, and Byron Rakitzis. "Es: A Shell with Higher-order Functions." In <em>USENIX Technical Conference Proceedings</em> (Winter 1993): 51-60.</p>
+</td>
+</tr>
+<tr class="row">
+<td>20</td>
+<td>Security: OKWS</td>
+<td>Krohn, Maxwell. "Building Secure High-Performance Web Services with OKWS." In <em>Proceedings of the USENIX 2004 Technical Conference</em>. Boston, MA: June 27-July 2, 2004, pp. 185-198. (<img src="../../common/images/inacessible.gif" alt="This resource may not render correctly in a screen reader."><a href="http://www.usenix.org/event/usenix04/tech/general/full_papers/krohn/krohn.pdf">PDF</a>) </td>
+</tr>
+<tr class="alt-row">
+<td>21</td>
+<td>XFI</td>
+<td>Erlingsson, Úlfar, Martín Abadi, Michael Vrable, Mihai budiu, and George C. Necula. "XFI: Software Guards for System Address Spaces." Presented at the <em>Symposium on Operating System Design and Implementation (OSDI)</em>, Seattle, WA, November 6-8, 2006.</td>
+</tr>
+<tr class="row">
+<td>22</td>
+<td>OS Bugs</td>
+<td>Engler, Dawson, David Yu Chen, Seth Hallem, Andy Chou, and Benjamin Chelf. "Bugs as Deviant Behavior: A General Approach to Inferring Errors in Systems Code." <em>Symposium on Operating Systems Principles</em>. Stanford, CA: Computer Systems Laboratory, Stanford University, 2001, pp. 57-72.</td>
+</tr>
+<tr class="alt-row">
+<td></td>
+<td>Hacking Day</td>
+<td></td>
+</tr>
+<tr class="row">
+<td>23</td>
+<td>OS Bakeoff</td>
+<td></td>
+</tr>
+<tr class="alt-row">
+<td></td>
+<td>Quiz 2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+            
+        </div>
+    
+                    
+
+
+
+
+
+                    
+                    
+                    
+                    
+        <div class="" id="parent-fieldname-bottomtext">
+            
+            
+        </div>
+    
+                                       
+                </div>
+<!-- mod8 ends -->
+            </div>
+<!-- courses_inner ends -->
+            
+        </div>
+<!-- main_content_course ends -->
+      </div>
+<!-- content_body END -->
+                                
+            </div>
+<!-- main end -->
+            <div id="footer">
+                
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div class="footer">
+<div class="footer_logo">
+<a href="http://web.mit.edu"> 
+<img width="65" height="35" align="top" title="MIT Logo" src="../../common/images/trans.gif" alt="MIT Logo"></a>  
+<a href="../../common/terms/index.htm"> 
+<img width="100" height="13" align="top" title="Copyright MIT" src="../../common/images/trans.gif" alt="Copyright MIT"></a>
+</div>
+<div class="footer_links">
+<ul>
+<li class="first">
+<a href="http://ocw.mit.edu/about/rss/">
+<img width="32" height="15" align="absbottom" src="../../common/images/footer_rss_new.gif" alt="RSS Feeds"></a> 
+<a href="http://ocw.mit.edu/about/rss/">RSS Feeds</a>
+</li>
+    <li><a href="../../common/terms/index.htm">Privacy and Terms of Use</a></li>
+    <li><a href="http://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="http://ocw.mit.edu/help/faq-cite-ocw-content/">Cite OCW Content</a></li>
+</ul>
+<p>Your use of the MIT OpenCourseWare site and course materials is subject to our Creative Commons License and other terms  of use.</p>
+<!-- end footer links -->
+</div>
+<div class="license">
+<a class="first" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="license" target="_blank"><img width="80" height="15" src="../../common/images/cc_logo_new.gif" alt="Creative Commons - some rights reserved"></a><br><a class="first" href="http://www.ocwconsortium.org/" target="_blank">
+<img width="80" height="44" src="../../common/images/ocw-logo_new.gif" alt="OCW Consortium"></a>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+            </div>
+<!-- footer end -->
+        </div>
+<!-- container end -->    
+      </body>
+</html>

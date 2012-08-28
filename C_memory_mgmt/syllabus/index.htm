@@ -1,0 +1,359 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>MIT OpenCourseWare | Electrical Engineering and Computer Science | 6.088 Introduction to C Memory Management and C++ Object-Oriented Programming, January IAP 2010 | Syllabus</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010" name="WT.cg_n">
+<meta content="Syllabus" name="WT.cg_s">
+<meta content="Syllabus" name="Title">
+<meta content="The syllabus contains an overview and list of materials for the course, grading criteria participation guidelines and a guide to the instructor?s evaluation of case write-ups." name="Description">
+<meta content="Kang, Eunsuk" name="Author">
+<meta content="Yang, Jean" name="Author">
+<meta content="C,C++,programming languages,abstraction,memory management,speed,pointers,structs,memory manipulation,object oriented programming,oop,objects,encapsulation,classes,input,output,inheritance,polymorphism,templates,standard library,binary search tree,arithmetic expression,eval,print" name="Keyword">
+<meta content="" name="Version">
+<meta content="6.088 Introduction to C Memory Management and C++ Object-Oriented Programming | Syllabus" name="Search_Display">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../common/styles/common.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/courses.css">
+<link href="http://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<script type="text/javascript" src="../../common/scripts/common-utils-offline.js"></script><script type="text/javascript" src="../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../common/scripts/bubble-popup-offline.js"></script>
+</head>
+<body id="home">
+        <a href="#main" class="skip" tabindex="-1">skip to content</a> <a id="top"></a>
+        <div id="container">
+            
+            
+                
+	
+
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header"><div id="page_header">
+<div class="logo"><h1><a href="http://ocw.mit.edu/"><img height="36" width="289" alt="MIT OpenCourseWare" src="../../common/images/logo-ocw-home_new.gif"></a></h1></div>     <div class="header_links">
+<div class="newsletter_icon"><a href="http://ocw.mit.edu/jsp/subscribe.jsp?utm_source=header"><img alt="Subscribe to OCW's newsletter." title="Subscribe to OCW's newsletter." src="../../common/images/newsletter.png"></a></div>         <div class="social_media_icons">
+<a style="float: left;" href="http://twitter.com/mitocw"><img alt="Follow OCW on Twitter." title="Follow OCW on Twitter." src="../../common/images/twitter.png"></a>             <a style="float: right;" href="http://facebook.com/mitocw"><img alt="Follow OCW on Facebook." title="Follow OCW on Facebook." src="../../common/images/facebook.png"></a>
+</div>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+<div id="primary_nav">
+<ul id="nav">
+<li class="">
+<a href="http://ocw.mit.edu/">Home</a>
+    </li>
+	<li class="first active">
+<a href="http://ocw.mit.edu/courses/">Courses</a>
+    </li>
+	<li class="">
+<a href="http://ocw.mit.edu/donate">Donate</a>
+    </li>
+	<li class="">
+<a href="http://ocw.mit.edu/about/">About OCW</a>
+    </li>
+    
+   
+</ul>
+<!-- begin search area, inputs are placed inside div blocks to validate xhtml strict --><form method="get" action="../../common/search/AdvancedSearch.htm">
+<div class="searchform">
+    <input type="text" onblur="fillSearchBox()" onfocus="clearSearchBox()" maxlength="255" value="Enter search keyword" name="q" class="search" id="terms"><input type="image" alt="Go" src="../../common/images/go_new.gif" name="btnG" class="but"><a href="../../common/search/AdvancedSearch.htm">Advanced Search</a>
+</div>
+</form>
+<!-- end search area -->
+<ul id="secondary_nav">
+<li class="first"><a href="http://ocw.mit.edu/help">Help</a></li>
+    <li><a href="../../common/jsp/feedback.htm">Contact Us</a></li>
+</ul>
+<!-- end Primary Nav -->
+</div>
+
+            
+            
+            <div id="main">
+                
+                <div id="local_navigation">
+                    
+
+
+
+
+<div class="get_started">
+	<ul>
+<li><a href="http://ocw.mit.edu/courses">VIEW ALL COURSES</a></li>
+	</ul>
+</div>
+
+<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><div class="get_started">
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/index.htm" class="">Course Home</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/syllabus/index.htm" class="selected">Syllabus</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/lecture-notes/index.htm" class="">Lecture Notes</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul>
+<li> 
+		           <a href="../../contents/assignments/index.htm" class="">Assignments</a>
+		        </li>
+                </ul>
+</div>
+	        
+		
+	    
+	        <div>
+               <ul></ul>
+</div>
+	        
+		
+	</div>
+	
+
+<!--Left Nav Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                
+                               
+                <div id="content_body">
+        <div class="page_links">
+            <div class="breadcrumb">
+                <div id="portal-breadcrumbs">
+
+    <a href="http://ocw.mit.edu/">Home</a>
+    <span class="breadcrumbSeparator">
+        &gt;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://ocw.mit.edu/courses">Courses</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science">Electrical Engineering and Computer Science</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            <a href="../../contents/index.htm">Introduction to C Memory Management and C++ Object-Oriented Programming</a>
+            <span class="breadcrumbSeparator">
+                &gt;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Syllabus</span>
+         
+    </span>
+</div>
+
+            </div>
+        </div>
+        <div id="main_content_course">
+            <div id="courses_inner">
+                <h1>
+        <span class="" id="parent-fieldname-title">
+            Syllabus
+        </span>
+    </h1>
+                <div class="clear"></div>
+                <div class="mod8">
+                    
+                    
+        <div class="" id="parent-fieldname-text">
+            
+<h2 class="subhead">Course Meeting Times</h2>
+<p>Lectures: 3 sessions / week for 2 weeks, 1.5 hours / session</p>
+<h2 class="subhead">Course Description</h2>
+<p>Ever hang your head in shame after your Python program wasn't as fast as your friend's C program? Ever wish you could use objects without having to use Java? Join us for this fun introduction to C and C++! We will take you through a tour that will start with writing simple C programs, go deep into the caves of C memory manipulation, resurface with an introduction to using C++ classes, dive deeper into advanced C++ class use and the C++ Standard Template Libraries. We'll wrap up by teaching you some tricks of the trade that you may need for tech interviews.</p>
+<p>We see this as a "C/C++ empowerment" course: we want you to come away understanding</p>
+<ol>
+<li>why you would want to use C over another language (control over memory, probably for performance reasons),</li>
+<li>why you would want to use C++ rather than C (objects), and</li>
+<li>how to be useful in C and C++.</li>
+</ol>
+<h2 class="subhead">Prerequisites</h2>
+<p>We target this course to those with some degree of comfort programming (in Python, Scheme, Java, etc.) who want to become comfortable with using C/C++. No C/C++ experience expected.</p>
+<h2 class="subhead">Course Outline</h2>
+<div class="maintabletemplate">
+<table class="tablewidth75" summary="See table caption for summary.">
+<caption class="invisible">Course outline.</caption>
+<thead><tr>
+<th>SES #</th>
+<th>TOPICS</th>
+</tr></thead>
+<tbody>
+<tr class="row">
+<td>1</td>
+<td>Motivation for using C/C++; discussion of where C and C++ sit in the abstraction hierarchy; writing our first C programs</td>
+</tr>
+<tr class="alt-row">
+<td>2</td>
+<td>The logistics of memory manipulation in C (pointers, structs)</td>
+</tr>
+<tr class="row">
+<td>3</td>
+<td>More advanced memory manipulation in C. We'll show double linked-list insert in place, inserting into a linked list using a double pointer, corner cases of using memory (when we actually need heap allocation), etc.</td>
+</tr>
+<tr class="alt-row">
+<td>4</td>
+<td>Introduction to C++; encapsulation: classes, namespaces, constructors and destructors; memory management in C++ (new, delete); operator overloading and standard input/output</td>
+</tr>
+<tr class="row">
+<td>5</td>
+<td>Inheritance and polymorphism; templates; standard library containers</td>
+</tr>
+<tr class="alt-row">
+<td>6</td>
+<td>Tricks of the trade. Things people might see in interviews, etc. Review and discussion of the covered topics, Q&amp;A.</td>
+</tr>
+</tbody>
+</table>
+</div>
+            
+        </div>
+    
+                    
+
+
+
+
+
+                    
+                    
+                    
+                    
+        <div class="" id="parent-fieldname-bottomtext">
+            
+            
+        </div>
+    
+                                       
+                </div>
+<!-- mod8 ends -->
+            </div>
+<!-- courses_inner ends -->
+            
+        </div>
+<!-- main_content_course ends -->
+      </div>
+<!-- content_body END -->
+                                
+            </div>
+<!-- main end -->
+            <div id="footer">
+                
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div class="footer">
+<div class="footer_logo">
+<a href="http://web.mit.edu"> 
+<img width="65" height="35" align="top" title="MIT Logo" src="../../common/images/trans.gif" alt="MIT Logo"></a>  
+<a href="../../common/terms/index.htm"> 
+<img width="100" height="13" align="top" title="Copyright MIT" src="../../common/images/trans.gif" alt="Copyright MIT"></a>
+</div>
+<div class="footer_links">
+<ul>
+<li class="first">
+<a href="http://ocw.mit.edu/about/rss/">
+<img width="32" height="15" align="absbottom" src="../../common/images/footer_rss_new.gif" alt="RSS Feeds"></a> 
+<a href="http://ocw.mit.edu/about/rss/">RSS Feeds</a>
+</li>
+    <li><a href="../../common/terms/index.htm">Privacy and Terms of Use</a></li>
+    <li><a href="http://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="http://ocw.mit.edu/help/faq-cite-ocw-content/">Cite OCW Content</a></li>
+</ul>
+<p>Your use of the MIT OpenCourseWare site and course materials is subject to our Creative Commons License and other terms  of use.</p>
+<!-- end footer links -->
+</div>
+<div class="license">
+<a class="first" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="license" target="_blank"><img width="80" height="15" src="../../common/images/cc_logo_new.gif" alt="Creative Commons - some rights reserved"></a><br><a class="first" href="http://www.ocwconsortium.org/" target="_blank">
+<img width="80" height="44" src="../../common/images/ocw-logo_new.gif" alt="OCW Consortium"></a>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+            </div>
+<!-- footer end -->
+        </div>
+<!-- container end -->    
+      </body>
+</html>
